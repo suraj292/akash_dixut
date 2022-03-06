@@ -72,4 +72,10 @@ class Dashboard extends Component
         Session::flash('updated', 'song has been updated');
         $this->links = youtubeBlog::all();
     }
+
+    public function logout()
+    {
+        Session::flush();
+        $this->redirect(route('admin'));
+    }
 }

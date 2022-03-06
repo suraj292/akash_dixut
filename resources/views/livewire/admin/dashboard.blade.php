@@ -1,7 +1,7 @@
 <div class="p-5 m-5">
     <div class="clearfix mb-2">
         <button wire:click="addSongBtn" class="btn btn-success float-left">Add new song</button>
-        <button wire:click="addSongBtn" class="btn btn-primary float-right">Logout</button>
+        <button wire:click="logout" class="btn btn-primary float-right">Logout</button>
     </div>
     <table class="table">
         <thead>
