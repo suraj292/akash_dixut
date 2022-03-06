@@ -1,5 +1,13 @@
-<div>
+<div class="container">
     <!-- ======= Hero Section ======= -->
+    <style>
+        #hero {
+            width: 109%;
+            height: 100vh;
+            background: url("{{ asset('assets/img/4.jpg') }}") top center;
+            background-size: cover;
+        }
+    </style>
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
         <div class="hero-container" data-aos="fade-in">
             <h1>Akash Dixit</h1>
@@ -189,23 +197,24 @@
             </button> -->
             <div class="row">
                 <!-- Gallery item -->
-                <a href="" data-toggle="modal" class=" video-btn" data-src="https://www.youtube.com/embed/m7exd0X63Nk"
+                @foreach($songs as $song)
+                <div type="button" href="" data-toggle="modal" class="col-xl-3 col-lg-4 col-md-6 mb-4 video-btn" data-src="https://www.youtube.com/embed/{{ $song->link }}"
                    data-target="#myModal">
-                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-                        <div class="bg-white rounded shadow-sm">
+                        <div class="bg-white rounded shadow">
 
                             <!-- https://img.youtube.com/vi/AS2vqqq3hes/sddefault.jpg -->
                             <!-- https://www.youtube.com/watch?v=m7exd0X63Nk -->
-                            <img src="https://img.youtube.com/vi/m7exd0X63Nk/sddefault.jpg" alt="" class="img-fluid card-img-top">
+                            <img src="https://img.youtube.com/vi/{{ $song->link }}/sddefault.jpg" alt="" class="img-fluid card-img-top">
 
                             <div class="p-4">
-                                <h5> <a href="#" class="text-dark">Red paint cup</a></h5>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                <h5> <a href="#" class="text-dark">{{ $song->title }}</a></h5>
+                                <p class="small text-muted mb-0">{{ $song->description }}</p>
                             </div>
 
                         </div>
-                    </div>
-                </a>
+                </div>
+            @endforeach
+
                 <!-- End -->
             </div>
 

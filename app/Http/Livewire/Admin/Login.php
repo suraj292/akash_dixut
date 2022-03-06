@@ -8,8 +8,8 @@ use Livewire\Component;
 
 class Login extends Component
 {
-    public $username="akash";
-    public $password="password123";
+    public $username;
+    public $password;
     public function render()
     {
         return view('livewire.admin.login')->layout('layouts.admin');
