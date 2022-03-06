@@ -69,7 +69,7 @@
 
                         <div class="col-6 col-sm-4 col-md-3">
                             <a href="https://www.hungama.com/artist/akash-dixit/18464/?autoplay=true" target="_blank">
-                                <img src="{{ asset('public/img/hungama-music.png') }}"/>
+                                <img src="{{ asset('storage/images/hungama-music.png') }}"/>
                             </a>
                         </div>
 

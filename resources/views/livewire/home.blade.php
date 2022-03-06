@@ -77,7 +77,7 @@
                                             src="data:image/svg+xml;charset=utf-8,&lt;svg xmlns%3D&#039;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#039; viewBox%3D&#039;0 0 2126 1347&#039;%2F&gt;"
                                             class="attachment-full size-full ld-lazyload" alt="" srcset=""
                                             sizes="(max-width: 2126px) 100vw, 2126px"
-                                            data-src="{{ asset('storage/app/public/images/10.jpg') }}"
+                                            data-src="{{ asset('storage/images/10.jpg') }}"
                                             data-srcset="https://creative.liquid-themes.com/wp-content/uploads/2018/09/slider-mask-min.jpg 2126w,
                                             https://creative.liquid-themes.com/wp-content/uploads/2018/09/slider-mask-min-300x190.jpg 300w,
                                             https://creative.liquid-themes.com/wp-content/uploads/2018/09/slider-mask-min-768x487.jpg 768w,
