@@ -29,6 +29,7 @@ class Dashboard extends Component
 
     public function addSong()
     {
+        $this->editSongDiv=null;
        $links = youtubeBlog::create([
            'title'=>$this->title,
            'link'=>$this->link,
@@ -50,6 +51,7 @@ class Dashboard extends Component
 
     public function edit($id)
     {
+        $this->addsongDiv=null;
         $this->editSongDiv = $id;
         $song = youtubeBlog::find($id);
         $this->editTitle = $song->title;
